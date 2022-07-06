@@ -116,7 +116,7 @@
     align-items: center;
   }
   
-  @keyframes links {
+  /* @keyframes links {
     0% {
       opacity: 0;
     }
@@ -128,8 +128,35 @@
       transform: translateY(0);
       opacity: 1;
     }
+  } */
+
+  @keyframes links {
+    0% {
+      transform: translateY(-100vw);
+    }
+    50% {
+      transform: translateY(-10vw);
+    }
+    90% {
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
   
+  /* ========== animação alternativa ========== */
+  /* @keyframes links{
+    0%{
+      transform: translateY(10rem) rotateY(-30deg);
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
+
   ul li a {
     height: 53px;
     display: flex;
@@ -145,32 +172,39 @@
   
     transition: background 300ms;
   
-    animation-duration: 1s;
-    animation-name: links;
-    animation-timing-function: ease;
+    opacity: 0;
+    /* animation-duration: 1s; */
+    /* animation-name: links; */
+    /* animation-timing-function: ease; */
   }
   #link0 {
-    animation-delay: 0ms;
+    /* animation-delay: 0ms; */
+    animation: links 1s 0.3s forwards;
   }
   
   #link1 {
-    animation-delay: 100ms;
+    /* animation-delay: 100ms; */
+    animation: links 1s 0.4s forwards;
   }
   
   #link2 {
-    animation-delay: 200ms;
+    /* animation-delay: 200ms; */
+    animation: links 1s 0.5s forwards;
   }
   
   #link3 {
-    animation-delay: 300ms;
+    /* animation-delay: 300ms; */
+    animation: links 1s 0.6s forwards;
   }
   
   #link4 {
-    animation-delay: 400ms;
+    /* animation-delay: 400ms; */
+    animation: links 1s 0.7s forwards;
   }
 
   #link5 {
-    animation-delay: 500ms;
+    /* animation-delay: 500ms; */
+    animation: links 1s 0.8s forwards;
   }
 
   /* pseud class */
