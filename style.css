@@ -7,6 +7,11 @@
   a {
     text-decoration: none;
   }
+
+  .icones {
+    margin-right: 5px;
+    font-size: 1.5rem;
+  }
   
   html {
     /*variaveis*/
@@ -34,6 +39,7 @@
     font-family: 'Roboto', sans-serif;
     --primary-color: #4263EB;
     --primary-color-dark: #364FC7;
+    max-height: 100vh;
   }
   
   .conteiner {
@@ -88,7 +94,9 @@
   
   ul {
     list-style: none;
-    margin: 48px 0px;
+    margin: 48px auto;
+    max-width: 98vw;
+    align-items: center;
   }
   
   @keyframes links {
