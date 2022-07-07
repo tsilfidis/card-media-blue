@@ -177,6 +177,7 @@
   ul li a:hover {
     background: var(--primary-color-dark);
     transform: scale(105%);
+    transition: 400ms;
   }
   
   footer {
