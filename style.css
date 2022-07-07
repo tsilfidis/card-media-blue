@@ -176,6 +176,7 @@
   /* pseud class */
   ul li a:hover {
     background: var(--primary-color-dark);
+    transform: scale(105%);
   }
   
   footer {
